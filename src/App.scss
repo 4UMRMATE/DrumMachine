@@ -1,0 +1,206 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+$padWidth: 12.5vmin;
+$padHeight: 12.5vmin;
+
+#root {
+  background-color: blue;
+  font-family: "Ultra", cursive;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 75vw;
+    height: 50vh;
+    border: 5px solid whitesmoke;
+    outline: 5px solid black;
+    background-color: black;
+    text-align: center;
+
+    .Pads {
+      width: 50%;
+      .pad-bank {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .drum-pad {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: $padWidth;
+          height: $padHeight;
+          margin-right: 25px;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 40px;
+        }
+
+        .drum-pad:hover {
+          background-color: rgb(206, 47, 47);
+          box-shadow: none;
+        }
+      }
+    }
+
+    .tools {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      width: 35%;
+      height: 95%;
+
+      .power {
+        font-size: 5vmin;
+        cursor: pointer;
+      }
+
+      #display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: $padWidth;
+        border: 5px solid blue;
+        color: black;
+        background-color: rgb(241, 241, 241);
+        font-size: 40px;
+      }
+
+      .volume {
+        width: 100%;
+
+        // ! Volume Slider
+        input[type="range"] {
+          -webkit-appearance: none;
+          margin: 18px 0;
+          width: 100%;
+        }
+        input[type="range"]:focus {
+          outline: none;
+        }
+        input[type="range"]::-webkit-slider-runnable-track {
+          width: 100%;
+          height: 8.4px;
+          cursor: pointer;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          background: blue;
+          border-radius: 1.3px;
+          border: 0.2px solid #010101;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          border: 1px solid #000000;
+          height: 36px;
+          width: 16px;
+          border-radius: 3px;
+          background: #ffffff;
+          cursor: pointer;
+          -webkit-appearance: none;
+          margin-top: -14px;
+        }
+        input[type="range"]:focus::-webkit-slider-runnable-track {
+          background: blue;
+        }
+        input[type="range"]::-moz-range-track {
+          width: 100%;
+          height: 8.4px;
+          cursor: pointer;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          background: blue;
+          border-radius: 1.3px;
+          border: 0.2px solid #010101;
+        }
+        input[type="range"]::-moz-range-thumb {
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          border: 1px solid #000000;
+          height: 36px;
+          width: 16px;
+          border-radius: 3px;
+          background: #ffffff;
+          cursor: pointer;
+        }
+        input[type="range"]::-ms-track {
+          width: 100%;
+          height: 8.4px;
+          cursor: pointer;
+          background: transparent;
+          border-color: transparent;
+          border-width: 16px 0;
+          color: transparent;
+        }
+        input[type="range"]::-ms-fill-lower {
+          background: blue;
+          border: 0.2px solid #010101;
+          border-radius: 2.6px;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+        }
+        input[type="range"]::-ms-fill-upper {
+          background: blue;
+          border: 0.2px solid #010101;
+          border-radius: 2.6px;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+        }
+        input[type="range"]::-ms-thumb {
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          border: 1px solid #000000;
+          height: 36px;
+          width: 16px;
+          border-radius: 3px;
+          background: #ffffff;
+          cursor: pointer;
+        }
+        input[type="range"]:focus::-ms-fill-lower {
+          background: blue;
+        }
+        input[type="range"]:focus::-ms-fill-upper {
+          background: blue;
+        }
+        // !
+      }
+
+      .kit-switcher {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 200px;
+        height: 75px;
+
+        .instruments {
+          display: flex;
+          flex-direction: row;
+          border: 1px solid black;
+          width: 100px;
+          height: 50px;
+          border: 2px solid black;
+          outline: 1px solid whitesmoke;
+          background-image: url(./kitSwitcher.png);
+          background-color: whitesmoke;
+          cursor: pointer;
+
+          .switcher {
+            width: 50px;
+            height: 50px;
+            background: blue;
+          }
+        }
+      }
+    }
+  }
+}

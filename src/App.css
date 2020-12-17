@@ -1,0 +1,271 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+#root {
+  background-color: blue;
+  font-family: "Ultra", cursive;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.App .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  width: 75vw;
+  height: 50vh;
+  border: 5px solid whitesmoke;
+  outline: 5px solid black;
+  background-color: black;
+  text-align: center;
+}
+
+.App .container .Pads {
+  width: 50%;
+}
+
+.App .container .Pads .pad-bank {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.App .container .Pads .pad-bank .drum-pad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 12.5vmin;
+  height: 12.5vmin;
+  margin-right: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.App .container .Pads .pad-bank .drum-pad:hover {
+  background-color: #ce2f2f;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.App .container .tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 35%;
+  height: 95%;
+}
+
+.App .container .tools .power {
+  font-size: 5vmin;
+  cursor: pointer;
+}
+
+.App .container .tools #display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 12.5vmin;
+  border: 5px solid blue;
+  color: black;
+  background-color: #f1f1f1;
+  font-size: 40px;
+}
+
+.App .container .tools .volume {
+  width: 100%;
+}
+
+.App .container .tools .volume input[type="range"] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+}
+
+.App .container .tools .volume input[type="range"]:focus {
+  outline: none;
+}
+
+.App .container .tools .volume input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: blue;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+.App .container .tools .volume input[type="range"]::-webkit-slider-thumb {
+  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+
+.App .container .tools .volume input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: blue;
+}
+
+.App .container .tools .volume input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: blue;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+.App .container .tools .volume input[type="range"]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.App .container .tools .volume input[type="range"]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+.App .container .tools .volume input[type="range"]::-ms-fill-lower {
+  background: blue;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+.App .container .tools .volume input[type="range"]::-ms-fill-upper {
+  background: blue;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+.App .container .tools .volume input[type="range"]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.App .container .tools .volume input[type="range"]:focus::-ms-fill-lower {
+  background: blue;
+}
+
+.App .container .tools .volume input[type="range"]:focus::-ms-fill-upper {
+  background: blue;
+}
+
+.App .container .tools .kit-switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 75px;
+}
+
+.App .container .tools .kit-switcher .instruments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid black;
+  width: 100px;
+  height: 50px;
+  border: 2px solid black;
+  outline: 1px solid whitesmoke;
+  background-image: url(./kitSwitcher.png);
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.App .container .tools .kit-switcher .instruments .switcher {
+  width: 50px;
+  height: 50px;
+  background: blue;
+}
+/*# sourceMappingURL=App.css.map */
