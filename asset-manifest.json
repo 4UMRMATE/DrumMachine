@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/4UMRMATE/DrumMachine/static/css/main.b7255cd1.chunk.css",
+    "main.js": "/4UMRMATE/DrumMachine/static/js/main.ab6a719d.chunk.js",
+    "main.js.map": "/4UMRMATE/DrumMachine/static/js/main.ab6a719d.chunk.js.map",
+    "runtime-main.js": "/4UMRMATE/DrumMachine/static/js/runtime-main.29d525ed.js",
+    "runtime-main.js.map": "/4UMRMATE/DrumMachine/static/js/runtime-main.29d525ed.js.map",
+    "static/js/2.280af7c6.chunk.js": "/4UMRMATE/DrumMachine/static/js/2.280af7c6.chunk.js",
+    "static/js/2.280af7c6.chunk.js.map": "/4UMRMATE/DrumMachine/static/js/2.280af7c6.chunk.js.map",
+    "static/js/3.ee898e61.chunk.js": "/4UMRMATE/DrumMachine/static/js/3.ee898e61.chunk.js",
+    "static/js/3.ee898e61.chunk.js.map": "/4UMRMATE/DrumMachine/static/js/3.ee898e61.chunk.js.map",
+    "index.html": "/4UMRMATE/DrumMachine/index.html",
+    "static/css/main.b7255cd1.chunk.css.map": "/4UMRMATE/DrumMachine/static/css/main.b7255cd1.chunk.css.map",
+    "static/js/2.280af7c6.chunk.js.LICENSE.txt": "/4UMRMATE/DrumMachine/static/js/2.280af7c6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.29d525ed.js",
+    "static/js/2.280af7c6.chunk.js",
+    "static/css/main.b7255cd1.chunk.css",
+    "static/js/main.ab6a719d.chunk.js"
+  ]
+}
